@@ -11,18 +11,14 @@
 				$(t+' .btn .prev').on('click',function(){
 					if(slider_lock){
 						slider_lock = false;
-						if(i > 0){i--;}else{
-							i = len - 1;
-						}
+						if(i > 0){i--;}
 						move(i);
 					}
 				})
 				$(t+' .btn .next').on('click',function(){
 					if(slider_lock){
 						slider_lock = false;
-						if(i < len - 1){i++;}else{
-							i = 0;
-						}
+						if(i < len - 1){i++;}
 						move(i);
 					}
 				})
